@@ -37,23 +37,23 @@ The application provides a simple dashboard where users can quickly see their fi
 │  Manage your money simply                               │
 ├─────────────────────────────────────────────────────────┤
 │                                                         │
-│  Total Income      Total Expenses      Current Balance │
-│  ₹25,000           ₹8,500              ₹16,500         │
+│  Total Income      Total Expenses      Current Balance  │
+│  ₹25,000           ₹8,500              ₹16,500          │
 │                                                         │
 ├─────────────────────────────────────────────────────────┤
-│  Add Transaction                                       │
+│  Add Transaction                                        │
 │                                                         │
 │  Expense / Income                                       │
-│  Title      Amount      Category      Date             │
+│  Title      Amount      Category      Date              │
 │                                                         │
 │                  + Add Transaction                      │
 ├─────────────────────────────────────────────────────────┤
-│  🔍 Search...    Category ▼    Type ▼                  │
+│  🔍 Search...    Category ▼    Type ▼                   │
 ├─────────────────────────────────────────────────────────┤
 │  Transaction History                                    │
 │                                                         │
-│  🛒 Grocery Shopping          Food       - ₹500        │
-│  💼 Freelance Project        Freelance  + ₹10,000     │
+│  🛒 Grocery Shopping          Food       - ₹500         │
+│  💼 Freelance Project        Freelance  + ₹10,000       │
 └─────────────────────────────────────────────────────────┘
 ```
 
