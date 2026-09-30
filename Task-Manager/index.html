@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div>
+            <h1>My Task Manager</h1>
+            <p>Organize your work, study and daily tasks</p>
+        </div>
+
+        <button id="themeButton" class="theme-button">
+            Dark Mode
+        </button>
+    </header>
+
+
+    <main class="container">
+
+        <!-- ADD TASK -->
+
+        <section class="card add-section">
+
+            <h2>Add New Task</h2>
+
+            <form id="taskForm">
+
+                <div class="form-group">
+                    <label for="taskInput">Task</label>
+
+                    <input
+                        type="text"
+                        id="taskInput"
+                        placeholder="Enter your task..."
+                    >
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="category">Category</label>
+
+                        <select id="category">
+                            <option value="Work">Work</option>
+                            <option value="Study">Study</option>
+                            <option value="Personal">Personal</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="priority">Priority</label>
+
+                        <select id="priority">
+                            <option value="Low">Low</option>
+                            <option value="Medium" selected>Medium</option>
+                            <option value="High">High</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="dueDate">Due Date</label>
+
+                        <input
+                            type="date"
+                            id="dueDate"
+                        >
+                    </div>
+
+                </div>
+
+
+                <button type="submit" class="add-button">
+                    Add Task
+                </button>
+
+                <p id="error"></p>
+
+            </form>
+
+        </section>
+
+
+        <!-- SEARCH AND FILTER -->
+
+        <section class="card filter-section">
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search tasks..."
+                >
+
+            </div>
+
+
+            <div class="filters">
+
+                <select id="statusFilter">
+
+                    <option value="all">
+                        All Tasks
+                    </option>
+
+                    <option value="active">
+                        Active
+                    </option>
+
+                    <option value="completed">
+                        Completed
+                    </option>
+
+                </select>
+
+
+                <select id="priorityFilter">
+
+                    <option value="all">
+                        All Priorities
+                    </option>
+
+                    <option value="High">
+                        High
+                    </option>
+
+                    <option value="Medium">
+                        Medium
+                    </option>
+
+                    <option value="Low">
+                        Low
+                    </option>
+
+                </select>
+
+            </div>
+
+        </section>
+
+
+        <!-- TASK HEADER -->
+
+        <section class="task-header">
+
+            <div>
+                <h2>My Tasks</h2>
+                <span id="taskCount">0 tasks</span>
+            </div>
+
+            <div class="task-actions">
+
+                <button id="clearCompleted">
+                    Clear Completed
+                </button>
+
+                <button id="clearAll" class="danger-button">
+                    Clear All
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- TASK LIST -->
+
+        <section id="taskList" class="task-list"></section>
+
+
+        <p id="emptyMessage" class="empty-message">
+            No tasks found.
+        </p>
+
+
+        <!-- STATISTICS -->
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <span>Total</span>
+                <strong id="total">0</strong>
+            </div>
+
+
+            <div class="stat-card">
+                <span>Pending</span>
+                <strong id="pending">0</strong>
+            </div>
+
+
+            <div class="stat-card">
+                <span>Completed</span>
+                <strong id="completed">0</strong>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            My Task Manager | JavaScript Internship Project
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
